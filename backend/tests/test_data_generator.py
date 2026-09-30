@@ -18,21 +18,24 @@ def test_s_curve_monotonicity_and_bounds():
         assert val >= prev
         prev = val
 
-def test_generator_determinism():
+def test_generator_determinism(tmp_path):
     """Verifies that identical seed produces identical projects and outcomes."""
-    stats1 = generate_synthetic_dataset(n_completed=20, n_ongoing=10, seed=123)
-    stats2 = generate_synthetic_dataset(n_completed=20, n_ongoing=10, seed=123)
+    dir1 = tmp_path / "run1"
+    dir2 = tmp_path / "run2"
+    stats1 = generate_synthetic_dataset(n_completed=20, n_ongoing=10, seed=123, output_dir=str(dir1))
+    stats2 = generate_synthetic_dataset(n_completed=20, n_ongoing=10, seed=123, output_dir=str(dir2))
     
     assert stats1["projects_count"] == stats2["projects_count"]
     assert stats1["cost_overrun_stats"] == stats2["cost_overrun_stats"]
     assert stats1["time_overrun_stats"] == stats2["time_overrun_stats"]
 
-def test_ground_truth_file_structure():
+def test_ground_truth_file_structure(tmp_path):
     """Verifies that _truth.json exists and contains planted coefficients."""
     truth_path = os.path.join(os.path.dirname(__file__), "../../data/synthetic/_truth.json")
     if not os.path.exists(truth_path):
-        # Generate small dataset to test file creation
-        generate_synthetic_dataset(n_completed=10, n_ongoing=5, seed=42)
+        # Generate small dataset to test file creation in isolated tmp_path
+        generate_synthetic_dataset(n_completed=10, n_ongoing=5, seed=42, output_dir=str(tmp_path))
+        truth_path = str(tmp_path / "_truth.json")
 
     with open(truth_path, "r", encoding="utf-8") as f:
         truth = json.load(f)

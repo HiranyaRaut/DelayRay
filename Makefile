@@ -34,7 +34,7 @@ train:
 	$(PYTHON) scripts/run_ablation.py
 
 test:
-	pytest backend/tests -v
+	$(PYTHON) -m pytest backend/tests -v
 
 lint:
 	ruff check backend

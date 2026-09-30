@@ -1,0 +1,38 @@
+[
+  {
+    "excluded_group": "G1",
+    "group_label": "G1",
+    "mae_without_group": 4.55,
+    "skill_loss_delta_mae": -0.06
+  },
+  {
+    "excluded_group": "G2",
+    "group_label": "G2",
+    "mae_without_group": 5.11,
+    "skill_loss_delta_mae": 0.5
+  },
+  {
+    "excluded_group": "G3",
+    "group_label": "G3",
+    "mae_without_group": 5.06,
+    "skill_loss_delta_mae": 0.45
+  },
+  {
+    "excluded_group": "G4",
+    "group_label": "G4",
+    "mae_without_group": 4.64,
+    "skill_loss_delta_mae": 0.03
+  },
+  {
+    "excluded_group": "G5",
+    "group_label": "G5",
+    "mae_without_group": 4.81,
+    "skill_loss_delta_mae": 0.2
+  },
+  {
+    "excluded_group": "G6",
+    "group_label": "G6",
+    "mae_without_group": 5.41,
+    "skill_loss_delta_mae": 0.8
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "by_sector": [
+    {
+      "slice": "Atomic Energy",
+      "count": 240,
+      "mae": 4.5
+    },
+    {
+      "slice": "Civil Aviation & Airports",
+      "count": 240,
+      "mae": 4.95
+    },
+    {
+      "slice": "Coal Mining & Washeries",
+      "count": 243,
+      "mae": 5.46
+    },
+    {
+      "slice": "Fertilizers & Chemicals",
+      "count": 240,
+      "mae": 3.71
+    },
+    {
+      "slice": "Hydro Power",
+      "count": 240,
+      "mae": 4.7
+    },
+    {
+      "slice": "Inland Waterways",
+      "count": 243,
+      "mae": 4.52
+    },
+    {
+      "slice": "Irrigation & Water Resources",
+      "count": 240,
+      "mae": 4.24
+    },
+    {
+      "slice": "Metro Rail Transit",
+      "count": 240,
+      "mae": 3.97
+    },
+    {
+      "slice": "Mines & Minerals",
+      "count": 243,
+      "mae": 4.62
+    },
+    {
+      "slice": "Oil & Gas Pipelines",
+      "count": 240,
+      "mae": 5.21
+    },
+    {
+      "slice": "Petroleum Refining",
+      "count": 240,
+      "mae": 4.92
+    },
+    {
+      "slice": "Ports & Harbours",
+      "count": 240,
+      "mae": 4.73
+    },
+    {
+      "slice": "Power Transmission",
+      "count": 240,
+      "mae": 5.01
+    },
+    {
+      "slice": "Railways",
+      "count": 240,
+      "mae": 4.81
+    },
+    {
+      "slice": "Renewable Energy (Solar/Wind)",
+      "count": 240,
+      "mae": 4.51
+    },
+    {
+      "slice": "Road Transport & Highways",
+      "count": 240,
+      "mae": 4.31
+    },
+    {
+      "slice": "Space Technology Infrastructure",
+      "count": 240,
+      "mae": 4.94
+    },
+    {
+      "slice": "Steel Production",
+      "count": 243,
+      "mae": 4.66
+    },
+    {
+      "slice": "Strategic & Defence Roads/Infra",
+      "count": 240,
+      "mae": 4.42
+    },
+    {
+      "slice": "Telecommunications",
+      "count": 240,
+      "mae": 4.27
+    },
+    {
+      "slice": "Thermal Power",
+      "count": 240,
+      "mae": 4.34
+    },
+    {
+      "slice": "Urban Infrastructure & Water",
+      "count": 240,
+      "mae": 4.4
+    }
+  ],
+  "by_cost_band": [
+    {
+      "slice": "\u20b9150-500 Cr",
+      "count": 420,
+      "mae": 4.42
+    },
+    {
+      "slice": "\u20b9500-2000 Cr",
+      "count": 1968,
+      "mae": 4.67
+    },
+    {
+      "slice": "\u20b92000-5000 Cr",
+      "count": 1545,
+      "mae": 4.68
+    },
+    {
+      "slice": ">\u20b95000 Cr",
+      "count": 1359,
+      "mae": 4.46
+    }
+  ],
+  "by_duration_stage": [
+    {
+      "slice": "25% Stage",
+      "count": 1764,
+      "mae": 6.08
+    },
+    {
+      "slice": "50% Stage",
+      "count": 1764,
+      "mae": 4.21
+    },
+    {
+      "slice": "75%+ Stage",
+      "count": 1764,
+      "mae": 3.51
+    }
+  ]
+}

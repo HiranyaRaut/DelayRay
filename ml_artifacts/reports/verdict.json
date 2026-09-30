@@ -1,0 +1,13 @@
+{
+  "task": "Cost Overrun %",
+  "mae_ml": 4.6,
+  "mae_baseline": 4.96,
+  "delta_mae_mean": -0.36,
+  "ci_low": -0.43,
+  "ci_high": -0.28,
+  "improvement_pct": 7.3,
+  "p_value": 1.6569828169898152e-25,
+  "verdict_status": "ml_superior",
+  "verdict_title": "AI/ML Methods Demonstrate Statistically Significant Superiority",
+  "verdict_text": "Machine learning (LightGBM/XGBoost ensemble) achieves a statistically significant 7.3% reduction in MAE over the best statistical baseline (Wilcoxon p < 0.001, 95% CI: [-0.43, -0.28]). The empirical gain comfortably exceeds the 5% practical policy threshold."
+}

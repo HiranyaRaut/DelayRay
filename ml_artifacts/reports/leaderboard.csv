@@ -1,0 +1,15 @@
+model_name,task,type,mae,rmse,r2,medae,skill_vs_b0,roc_auc,pr_auc,f1,precision,recall,brier_score
+B0 Sector Median,Cost Overrun %,Statistical Baseline,9.28,11.75,-0.257,7.81,0.0,,,,,,
+B4 EVM Forecast (EAC),Cost Overrun %,Statistical Baseline,12.99,15.94,-1.313,11.5,-0.4,,,,,,
+B1 Ridge Regression,Cost Overrun %,Linear Baseline,4.96,6.4,0.627,3.91,0.465,,,,,,
+LightGBM Regressor,Cost Overrun %,Machine Learning,4.65,6.09,0.662,3.62,0.499,,,,,,
+XGBoost Regressor,Cost Overrun %,Machine Learning,4.6,6.05,0.667,3.59,0.504,,,,,,
+Stacked ML Ensemble,Cost Overrun %,Champion ML,4.6,6.03,0.669,3.58,0.504,,,,,,
+B0 Sector Median,Delay Months,Statistical Baseline,16.12,20.3,-0.729,13.3,,,,,,,
+B4 EVM Schedule (SPI),Delay Months,Statistical Baseline,13.4,18.71,-0.469,10.07,,,,,,,
+B1 Ridge Regression,Delay Months,Linear Baseline,7.67,9.99,0.581,6.19,,,,,,,
+LightGBM Regressor,Delay Months,Machine Learning,7.15,9.46,0.625,5.52,,,,,,,
+Stacked ML Ensemble,Delay Months,Champion ML,7.08,9.4,0.63,5.48,,,,,,,
+B2 Logistic Regression,High-Risk Flag,Statistical Baseline,,,,,,0.969,0.998,0.982,0.977,0.988,0.0251
+LightGBM Classifier,High-Risk Flag,Machine Learning,,,,,,0.971,0.998,0.984,0.974,0.994,0.0241
+Calibrated ML Classifier,High-Risk Flag,Champion ML,,,,,,0.961,0.998,0.983,0.973,0.994,0.0235

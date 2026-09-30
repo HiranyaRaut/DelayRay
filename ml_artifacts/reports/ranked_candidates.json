@@ -1,0 +1,92 @@
+[
+  {
+    "field_name": "design_changes_count",
+    "display_name": "Design Change Revisions",
+    "group": "G6",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.44,
+    "priority_score": 0.44,
+    "suggested_collection_point": "Monthly Execution Log"
+  },
+  {
+    "field_name": "land_acquisition_pct_at_start",
+    "display_name": "Land Handover % at Sanction",
+    "group": "G6",
+    "collection_difficulty": "medium",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Detailed Project Report (DPR) / Sanction Stage"
+  },
+  {
+    "field_name": "env_forest_clearance_delay_months",
+    "display_name": "Statutory Clearance Delay (Months)",
+    "group": "G6",
+    "collection_difficulty": "medium",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Quarterly Monitoring Form (Pre-construction)"
+  },
+  {
+    "field_name": "utility_shifting_count",
+    "display_name": "Utility Shifting Complexity Index",
+    "group": "G6",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Tender / Pre-award Stage"
+  },
+  {
+    "field_name": "contractor_concurrent_projects",
+    "display_name": "Contractor Concurrent Load",
+    "group": "G6",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Contract Award / ERP Integration"
+  },
+  {
+    "field_name": "contractor_performance_score",
+    "display_name": "Contractor Historical Rating",
+    "group": "G6",
+    "collection_difficulty": "medium",
+    "marginal_mae_gain": 0.02,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Prequalification Registry"
+  },
+  {
+    "field_name": "state_rainfall_anomaly_pct",
+    "display_name": "Precipitation Anomaly (%)",
+    "group": "G5",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Automated External Feed (IMD)"
+  },
+  {
+    "field_name": "commodity_price_index_shock",
+    "display_name": "Material Cost Shock Index",
+    "group": "G5",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Automated External Feed (WPI/Commerce)"
+  },
+  {
+    "field_name": "nlp_challenge_tags",
+    "display_name": "NLP Extracted Bottleneck Tags",
+    "group": "G4",
+    "collection_difficulty": "low",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.01,
+    "suggested_collection_point": "Monthly Text Mining"
+  },
+  {
+    "field_name": "geotechnical_uncertainty_score",
+    "display_name": "Geotechnical Risk Rating",
+    "group": "G6",
+    "collection_difficulty": "high",
+    "marginal_mae_gain": 0.01,
+    "priority_score": 0.0,
+    "suggested_collection_point": "Detailed Engineering Review"
+  }
+]

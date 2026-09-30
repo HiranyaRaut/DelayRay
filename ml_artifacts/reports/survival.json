@@ -1,0 +1,11 @@
+{
+  "median_survival_duration_months": 69.8,
+  "hazard_ratios": {
+    "original_cost_log": 1.002,
+    "spi": 1.476,
+    "land_acquisition_pct": 1.206,
+    "contractor_score": 1.149,
+    "contractor_concurrent": 0.892
+  },
+  "concordance_index": 0.568
+}

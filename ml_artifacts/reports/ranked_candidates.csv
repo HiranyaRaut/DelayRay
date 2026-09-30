@@ -1,0 +1,11 @@
+field_name,display_name,group,collection_difficulty,marginal_mae_gain,priority_score,suggested_collection_point
+design_changes_count,Design Change Revisions,G6,low,0.44,0.44,Monthly Execution Log
+land_acquisition_pct_at_start,Land Handover % at Sanction,G6,medium,0.01,0.01,Detailed Project Report (DPR) / Sanction Stage
+env_forest_clearance_delay_months,Statutory Clearance Delay (Months),G6,medium,0.01,0.01,Quarterly Monitoring Form (Pre-construction)
+utility_shifting_count,Utility Shifting Complexity Index,G6,low,0.01,0.01,Tender / Pre-award Stage
+contractor_concurrent_projects,Contractor Concurrent Load,G6,low,0.01,0.01,Contract Award / ERP Integration
+contractor_performance_score,Contractor Historical Rating,G6,medium,0.02,0.01,Prequalification Registry
+state_rainfall_anomaly_pct,Precipitation Anomaly (%),G5,low,0.01,0.01,Automated External Feed (IMD)
+commodity_price_index_shock,Material Cost Shock Index,G5,low,0.01,0.01,Automated External Feed (WPI/Commerce)
+nlp_challenge_tags,NLP Extracted Bottleneck Tags,G4,low,0.01,0.01,Monthly Text Mining
+geotechnical_uncertainty_score,Geotechnical Risk Rating,G6,high,0.01,0.0,Detailed Engineering Review

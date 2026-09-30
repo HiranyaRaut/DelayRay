@@ -1,0 +1,14 @@
+{
+  "cost_intervals": {
+    "nominal_coverage_pct": 80.0,
+    "empirical_coverage_pct": 80.14,
+    "mean_interval_width": 15.26,
+    "conformal_adjustment": 1.42
+  },
+  "delay_intervals": {
+    "nominal_coverage_pct": 80.0,
+    "empirical_coverage_pct": 78.61,
+    "mean_interval_width": 22.78,
+    "conformal_adjustment": 4.55
+  }
+}

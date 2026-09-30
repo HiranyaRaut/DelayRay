@@ -1,0 +1,7 @@
+experiment,feature_group,n_features,test_mae,test_r2,skill_score
+CUF-Only (G1+G2),G1+G2,14,5.71,0.476,0.273
+CUF + Derived EV (G1-G3),G1+G2+G3,22,5.4,0.516,0.312
+CUF + Remarks NLP (G1+G2+G4),G1+G2+G4,24,5.73,0.475,0.27
+CUF + External Macro (G1+G2+G5),G1+G2+G5,18,5.78,0.48,0.264
+CUF + Project Specific Extras (G1+G2+G6),G1+G2+G6,25,5.31,0.561,0.324
+All Groups (G1-G6 Full),G1-G6,47,4.61,0.665,0.413

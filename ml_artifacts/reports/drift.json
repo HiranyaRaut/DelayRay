@@ -1,0 +1,149 @@
+{
+  "retrain_recommended": true,
+  "monthly_drift_reports": [
+    {
+      "month": "2025-05",
+      "avg_psi": 2.703,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.3361,
+        "cost_efficiency": 0.3632,
+        "spend_pct": 0.703,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 3.8527
+      }
+    },
+    {
+      "month": "2025-06",
+      "avg_psi": 2.56,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.3439,
+        "cost_efficiency": 0.3266,
+        "spend_pct": 0.7782,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 3.0902
+      }
+    },
+    {
+      "month": "2025-07",
+      "avg_psi": 2.893,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.3311,
+        "cost_efficiency": 0.2822,
+        "spend_pct": 0.7744,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 4.8164
+      }
+    },
+    {
+      "month": "2025-08",
+      "avg_psi": 2.603,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.3738,
+        "cost_efficiency": 0.315,
+        "spend_pct": 0.7825,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 3.283
+      }
+    },
+    {
+      "month": "2025-09",
+      "avg_psi": 2.269,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.3943,
+        "cost_efficiency": 0.2752,
+        "spend_pct": 0.8141,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 1.599
+      }
+    },
+    {
+      "month": "2025-10",
+      "avg_psi": 2.609,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4082,
+        "cost_efficiency": 0.3316,
+        "spend_pct": 0.834,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 3.2108
+      }
+    },
+    {
+      "month": "2025-11",
+      "avg_psi": 2.422,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4192,
+        "cost_efficiency": 0.3102,
+        "spend_pct": 0.8332,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 2.2875
+      }
+    },
+    {
+      "month": "2025-12",
+      "avg_psi": 2.45,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4025,
+        "cost_efficiency": 0.2955,
+        "spend_pct": 0.8917,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 2.4019
+      }
+    },
+    {
+      "month": "2026-01",
+      "avg_psi": 2.282,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4299,
+        "cost_efficiency": 0.308,
+        "spend_pct": 0.8074,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 1.6043
+      }
+    },
+    {
+      "month": "2026-02",
+      "avg_psi": 2.286,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4314,
+        "cost_efficiency": 0.3344,
+        "spend_pct": 0.877,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 1.5281
+      }
+    },
+    {
+      "month": "2026-03",
+      "avg_psi": 2.595,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.4721,
+        "cost_efficiency": 0.3292,
+        "spend_pct": 0.8723,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 3.0429
+      }
+    },
+    {
+      "month": "2026-04",
+      "avg_psi": 2.305,
+      "status": "action_required",
+      "feature_psis": {
+        "spi": 0.5066,
+        "cost_efficiency": 0.2929,
+        "spend_pct": 0.8522,
+        "steel_price_index": 8.2606,
+        "rainfall_anomaly_pct": 1.6118
+      }
+    }
+  ]
+}

@@ -196,7 +196,8 @@ def generate_external_indicators(start_year: int = 2006, end_year: int = 2026, s
 def generate_synthetic_dataset(
     n_completed: int = 7500,
     n_ongoing: int = 1981,
-    seed: int = RANDOM_SEED
+    seed: int = RANDOM_SEED,
+    output_dir: str = None
 ) -> Dict[str, Any]:
     """
     Main generator producing:
@@ -651,8 +652,11 @@ def generate_synthetic_dataset(
     df_remarks = pd.DataFrame(remarks)
     df_milestones = pd.DataFrame(milestones)
 
-    # Save to data/synthetic
-    out_dir = os.path.join(ROOT_DIR, "data", "synthetic")
+    # Save to data/synthetic or custom output_dir
+    if output_dir is None:
+        out_dir = os.path.join(ROOT_DIR, "data", "synthetic")
+    else:
+        out_dir = output_dir
     os.makedirs(out_dir, exist_ok=True)
 
     print(f"Exporting synthetic datasets to {out_dir}...")

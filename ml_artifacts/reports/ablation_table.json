@@ -1,0 +1,50 @@
+[
+  {
+    "experiment": "CUF-Only (G1+G2)",
+    "feature_group": "G1+G2",
+    "n_features": 14,
+    "test_mae": 5.71,
+    "test_r2": 0.476,
+    "skill_score": 0.273
+  },
+  {
+    "experiment": "CUF + Derived EV (G1-G3)",
+    "feature_group": "G1+G2+G3",
+    "n_features": 22,
+    "test_mae": 5.4,
+    "test_r2": 0.516,
+    "skill_score": 0.312
+  },
+  {
+    "experiment": "CUF + Remarks NLP (G1+G2+G4)",
+    "feature_group": "G1+G2+G4",
+    "n_features": 24,
+    "test_mae": 5.73,
+    "test_r2": 0.475,
+    "skill_score": 0.27
+  },
+  {
+    "experiment": "CUF + External Macro (G1+G2+G5)",
+    "feature_group": "G1+G2+G5",
+    "n_features": 18,
+    "test_mae": 5.78,
+    "test_r2": 0.48,
+    "skill_score": 0.264
+  },
+  {
+    "experiment": "CUF + Project Specific Extras (G1+G2+G6)",
+    "feature_group": "G1+G2+G6",
+    "n_features": 25,
+    "test_mae": 5.31,
+    "test_r2": 0.561,
+    "skill_score": 0.324
+  },
+  {
+    "experiment": "All Groups (G1-G6 Full)",
+    "feature_group": "G1-G6",
+    "n_features": 47,
+    "test_mae": 4.61,
+    "test_r2": 0.665,
+    "skill_score": 0.413
+  }
+]
