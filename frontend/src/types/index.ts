@@ -161,6 +161,7 @@ export interface AlertItem {
   rule_id: string;
   severity: AlertSeverity;
   title: string;
+  description?: string | null;
   detail?: any;
   status: AlertStatus;
   created_at: string;
