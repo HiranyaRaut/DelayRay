@@ -5,7 +5,21 @@ DelayRay Security Module - Password Hashing & JWT Handling
 from datetime import datetime, timedelta, timezone
 from typing import Optional, Dict, Any
 import jwt
+import bcrypt
 from backend.app.config import settings
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    """Verifies plain password against bcrypt hash."""
+    try:
+        return bcrypt.checkpw(plain_password.encode("utf-8"), hashed_password.encode("utf-8"))
+    except Exception:
+        return False
+
+def get_password_hash(password: str) -> str:
+    """Generates bcrypt hash for password."""
+    salt = bcrypt.gensalt()
+    return bcrypt.hashpw(password.encode("utf-8"), salt).decode("utf-8")
+
 
 def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta] = None) -> str:
     """
