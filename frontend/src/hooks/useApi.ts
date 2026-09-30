@@ -50,6 +50,69 @@ export function useProjectDetail(id?: string) {
   });
 }
 
+export function useProjectSCurve(id?: string) {
+  return useQuery({
+    queryKey: ["projectSCurve", id],
+    queryFn: () => (id ? api.getProjectSCurve(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 60000,
+  });
+}
+
+export function useProjectExplain(id?: string) {
+  return useQuery({
+    queryKey: ["projectExplain", id],
+    queryFn: () => (id ? api.getProjectExplain(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 60000,
+  });
+}
+
+export function useProjectPeers(id?: string) {
+  return useQuery({
+    queryKey: ["projectPeers", id],
+    queryFn: () => (id ? api.getProjectPeers(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 60000,
+  });
+}
+
+export function useProjectMilestones(id?: string) {
+  return useQuery({
+    queryKey: ["projectMilestones", id],
+    queryFn: () => (id ? api.getProjectMilestones(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 60000,
+  });
+}
+
+export function useProjectAlerts(id?: string) {
+  return useQuery({
+    queryKey: ["projectAlerts", id],
+    queryFn: () => (id ? api.getProjectAlerts(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 30000,
+  });
+}
+
+export function useProjectRemarks(id?: string) {
+  return useQuery({
+    queryKey: ["projectRemarks", id],
+    queryFn: () => (id ? api.getProjectRemarks(id) : Promise.reject("No ID")),
+    enabled: !!id,
+    staleTime: 60000,
+  });
+}
+
+export function useWhatIfMutation(id?: string) {
+  return useMutation({
+    mutationFn: (levers: Record<string, any>) => {
+      if (!id) throw new Error("No project ID for what-if simulation");
+      return api.simulateWhatIf(id, levers);
+    },
+  });
+}
+
 export function useAlerts(params: Record<string, any> = {}) {
   return useQuery({
     queryKey: ["alerts", params],

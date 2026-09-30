@@ -7,6 +7,9 @@ import { ComponentShowcase } from "./pages/ComponentShowcase";
 import { PlaceholderPage } from "./pages/PlaceholderPage";
 import { useAuthStore } from "./stores/authStore";
 
+import { Projects } from "./pages/Projects";
+import { ProjectDetail } from "./pages/ProjectDetail";
+
 export function AppRoutes() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
 
@@ -17,16 +20,8 @@ export function AppRoutes() {
       {/* Main Protected / Demo Application Shell */}
       <Route path="/" element={<Layout />}>
         <Route index element={<Dashboard />} />
-        <Route
-          path="projects"
-          element={
-            <PlaceholderPage
-              title="Projects Catalogue & Analytics"
-              phase="Phase 5"
-              description="Virtualized table over 1,981 central sector projects with faceted search, S-curves, and drawer quick-peek."
-            />
-          }
-        />
+        <Route path="projects" element={<Projects />} />
+        <Route path="projects/:id" element={<ProjectDetail />} />
         <Route
           path="alerts"
           element={
