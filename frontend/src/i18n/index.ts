@@ -1,0 +1,73 @@
+/**
+ * DelayRay Internationalization (i18n) Scaffold
+ * Supports English and Hindi for key portfolio labels.
+ */
+
+export const translations = {
+  en: {
+    brand_name: "DelayRay",
+    tagline: "AI Predictive Analytics & Early Warning System",
+    synthetic_badge: "Synthetic Demo Data",
+    synthetic_badge_desc: "All figures & project data are synthetically generated for simulation.",
+    nav_command_center: "Command Center",
+    nav_projects: "Projects",
+    nav_alerts: "Early Warning Center",
+    nav_models: "Model Arena",
+    nav_ablation: "Ablation Lab",
+    nav_benchmarking: "Benchmarking",
+    nav_assistant: "Assistant",
+    nav_admin: "Data & Admin",
+    nav_components: "Component Library",
+    kpi_projects_tracked: "Projects Tracked",
+    kpi_portfolio_cost: "Portfolio Cost",
+    kpi_expenditure: "Cumulative Expenditure",
+    kpi_pred_overrun: "Predicted Overrun",
+    kpi_value_at_risk: "Value at Risk (VaR)",
+    kpi_critical_count: "Critical Risk Projects",
+    kpi_open_alerts: "Open Early Warnings",
+    risk_low: "Low",
+    risk_moderate: "Moderate",
+    risk_high: "High",
+    risk_critical: "Critical",
+    action_advance_month: "Advance Month",
+    action_search: "Search projects, sectors, rules... (Ctrl+K)",
+    action_logout: "Sign Out",
+    action_login: "Sign In",
+    advisory_notice: "Risk scores and predictions support human decisions and do not replace them.",
+  },
+  hi: {
+    brand_name: "डिलेरे (DelayRay)",
+    tagline: "एआई-संचालित अवसंरचना पूर्व चेतावनी एवं पूर्वानुमान प्रणाली",
+    synthetic_badge: "कृत्रिम डेमो डेटा",
+    synthetic_badge_desc: "सभी आंकड़े और परियोजना डेटा सिमुलेशन के लिए कृत्रिम रूप से उत्पन्न किए गए हैं।",
+    nav_command_center: "कमांड सेंटर",
+    nav_projects: "परियोजनाएं",
+    nav_alerts: "पूर्व चेतावनी केंद्र",
+    nav_models: "मॉडल अखाड़ा (Arena)",
+    nav_ablation: "एब्लेशन लैब",
+    nav_benchmarking: "बेंचमार्किंग",
+    nav_assistant: "एआई सहायक",
+    nav_admin: "डेटा एवं प्रशासन",
+    nav_components: "घटक पुस्तकालय",
+    kpi_projects_tracked: "ट्रैक की गई परियोजनाएं",
+    kpi_portfolio_cost: "पोर्टफोलियो स्वीकृत लागत",
+    kpi_expenditure: "संचयी व्यय",
+    kpi_pred_overrun: "अनुमानित अतिरिक्त लागत",
+    kpi_value_at_risk: "जोखिम मूल्य (VaR)",
+    kpi_critical_count: "अत्यधिक जोखिम परियोजनाएं",
+    kpi_open_alerts: "सक्रिय चेतावनियां",
+    risk_low: "कम जोखिम",
+    risk_moderate: "मध्यम जोखिम",
+    risk_high: "उच्च जोखिम",
+    risk_critical: "गंभीर (क्रिटिकल)",
+    action_advance_month: "अगला माह सिमुलेट करें",
+    action_search: "खोजें... (Ctrl+K)",
+    action_logout: "लॉग आउट",
+    action_login: "लॉग इन",
+    advisory_notice: "जोखिम स्कोर और भविष्यवाणियां प्रशासनिक निर्णय सहायता के लिए हैं और मानव निर्णयों का स्थान नहीं लेती हैं।",
+  },
+};
+
+export function t(key: keyof typeof translations.en, lang: "en" | "hi" = "en"): string {
+  return translations[lang]?.[key] || translations.en[key] || key;
+}
