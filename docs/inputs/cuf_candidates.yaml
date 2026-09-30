@@ -1,0 +1,79 @@
+# Candidate New CUF Fields for Ablation and Policy Prioritization
+# Attributes:
+#   field_name: Internal variable name
+#   group: G4, G5, or G6
+#   display_name: Human readable label for UI and reports
+#   collection_difficulty: low | medium | high
+#   suggested_collection_point: Where in the project lifecycle this should be collected
+#   description: Policy justification for capturing this field
+
+candidates:
+  - field_name: "land_acquisition_pct_at_start"
+    group: "G6"
+    display_name: "Land Handover % at Sanction"
+    collection_difficulty: "medium"
+    suggested_collection_point: "Detailed Project Report (DPR) / Sanction Stage"
+    description: "Percentage of total project land encumbrance-free and formally handed over before civil works award."
+
+  - field_name: "env_forest_clearance_delay_months"
+    group: "G6"
+    display_name: "Statutory Clearance Delay (Months)"
+    collection_difficulty: "medium"
+    suggested_collection_point: "Quarterly Monitoring Form (Pre-construction)"
+    description: "Months elapsed between formal application and Stage-II forest/wildlife clearance issuance."
+
+  - field_name: "utility_shifting_count"
+    group: "G6"
+    display_name: "Utility Shifting Complexity Index"
+    collection_difficulty: "low"
+    suggested_collection_point: "Tender / Pre-award Stage"
+    description: "Quantified count of major electrical, water, gas, and telecom lines intersecting the alignment."
+
+  - field_name: "contractor_concurrent_projects"
+    group: "G6"
+    display_name: "Contractor Concurrent Load"
+    collection_difficulty: "low"
+    suggested_collection_point: "Contract Award / ERP Integration"
+    description: "Count of concurrent central infrastructure projects assigned to the primary EPC contractor."
+
+  - field_name: "contractor_performance_score"
+    group: "G6"
+    display_name: "Contractor Historical Rating"
+    collection_difficulty: "medium"
+    suggested_collection_point: "Prequalification Registry"
+    description: "Weighted historical delivery score (0-100) across prior central sector contracts."
+
+  - field_name: "geotechnical_uncertainty_score"
+    group: "G6"
+    display_name: "Geotechnical Risk Rating"
+    collection_difficulty: "high"
+    suggested_collection_point: "Detailed Engineering Review"
+    description: "Standardized risk assessment of subsurface conditions (tunneling, seismic zone, slope stability)."
+
+  - field_name: "design_changes_count"
+    group: "G6"
+    display_name: "Design Change Revisions"
+    collection_difficulty: "low"
+    suggested_collection_point: "Monthly Execution Log"
+    description: "Count of major engineering scope alterations approved after civil work commencement."
+
+  - field_name: "state_rainfall_anomaly_pct"
+    group: "G5"
+    display_name: "Precipitation Anomaly (%)"
+    collection_difficulty: "low"
+    suggested_collection_point: "Automated External Feed (IMD)"
+    description: "Percentage deviation of monthly state precipitation from long-period average."
+
+  - field_name: "commodity_price_index_shock"
+    group: "G5"
+    display_name: "Material Cost Shock Index"
+    collection_difficulty: "low"
+    suggested_collection_point: "Automated External Feed (WPI/Commerce)"
+    description: "Weighted basket index of steel, cement, bitumen, and POL prices relative to sanction year baseline."
+
+  - field_name: "nlp_challenge_tags"
+    group: "G4"
+    display_name: "NLP Extracted Bottleneck Tags"
+    collection_difficulty: "low"
+    suggested_collection_point: "Monthly Text Mining"
+    description: "Categorical bottleneck flags (land, funds, ROW, litigation, weather) extracted from engineer remarks."

@@ -1,0 +1,70 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: delayray-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite:////data/delayray.db
+      - OLLAMA_URL=http://ollama:11434
+      - CHAT_MODEL=llama3.1:8b
+      - EMBED_MODEL=nomic-embed-text
+      - DEMO_MODE=true
+      - JWT_SECRET=production-secret-replace-with-secure-key
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:8080,http://localhost:80
+    volumes:
+      - app_data:/data
+      - app_artifacts:/app/ml_artifacts
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: delayray-web
+    ports:
+      - "8080:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: delayray-postgres
+    profiles:
+      - postgres
+    environment:
+      POSTGRES_DB: delayray
+      POSTGRES_USER: delayray
+      POSTGRES_PASSWORD: delayray_secure_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: delayray-ollama
+    profiles:
+      - ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+
+volumes:
+  app_data:
+  app_artifacts:
+  postgres_data:
+  ollama_models:

@@ -1,0 +1,56 @@
+# CUF Column Mapping Configuration
+# Maps internal schema keys to inbound CSV/XLSX header names for flexible data ingestion
+
+mappings:
+  project_id:
+    - "project_id"
+    - "Project ID"
+    - "Project Code"
+  project_name:
+    - "project_name"
+    - "Project Name"
+    - "Name of Project"
+  ministry:
+    - "ministry"
+    - "Ministry"
+    - "Ministry Name"
+  sector:
+    - "sector"
+    - "Sector"
+  sub_sector:
+    - "sub_sector"
+    - "Sub Sector"
+    - "Sub-Sector"
+  primary_state:
+    - "primary_state"
+    - "State"
+    - "Primary State"
+  implementing_agency:
+    - "implementing_agency"
+    - "Agency"
+    - "Implementing Agency"
+  agency_type:
+    - "agency_type"
+    - "Agency Type"
+  sanction_date:
+    - "sanction_date"
+    - "Date of Sanction"
+    - "Sanction Date"
+  start_date:
+    - "start_date"
+    - "Date of Commissioning/Start"
+    - "Start Date"
+  original_cost_cr:
+    - "original_cost_cr"
+    - "Original Cost (Rs. Cr.)"
+    - "Sanctioned Cost"
+  original_completion_date:
+    - "original_completion_date"
+    - "Original DOC"
+    - "Target Completion Date"
+  planned_duration_months:
+    - "planned_duration_months"
+    - "Planned Duration (Months)"
+  funding_mode:
+    - "funding_mode"
+    - "Mode of Funding"

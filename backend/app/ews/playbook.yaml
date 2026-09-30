@@ -1,0 +1,33 @@
+# Intervention Playbook
+# Maps driver tags to recommended actions, owner level, and evidence notes
+
+playbook:
+  - driver_tag: "land_acquisition_delay"
+    action: "Convene Empowered State Committee meeting under Chief Secretary for accelerated direct purchase or RoW notification."
+    owner_level: "state"
+    expected_effect: "Reduces land clearance waiting time by 2-4 months."
+    evidence_note: "Historical MoSPI data shows inter-departmental task forces resolve 64% of linear project land disputes within 90 days."
+
+  - driver_tag: "statutory_clearance_bottleneck"
+    action: "Fast-track Stage-II Forest/Environment Clearance review via Parivesh portal special nodal desk."
+    owner_level: "ministry"
+    expected_effect: "Curbs pre-construction regulatory delay by up to 3 months."
+    evidence_note: "PARIVESH fast-track processing reduces median clearance issuance time by 42 days."
+
+  - driver_tag: "contractor_cashflow_distress"
+    action: "Release verified milestone mobilization advance against bank guarantee and process pending escalation bills."
+    owner_level: "project"
+    expected_effect: "Restores on-site contractor labor and machinery mobilization."
+    evidence_note: "Cashflow stabilization mitigates contractor work slowdown in 78% of observed highway packages."
+
+  - driver_tag: "utility_shifting_impediment"
+    action: "Execute joint utility realignment pact with state DISCOM and Municipal Corporation with dedicated supervision."
+    owner_level: "state"
+    expected_effect: "Avoids alignment work stalling in urban / semi-urban corridors."
+    evidence_note: "Joint utility shifting protocols reduce civil works handover deadlocks by 5.2 months on average."
+
+  - driver_tag: "design_scope_instability"
+    action: "Freeze technical alignment revisions and mandate Central Technical Committee sign-off for any scope variation > 2%."
+    owner_level: "ministry"
+    expected_effect: "Halts repeated change orders and structural redesign delays."
+    evidence_note: "Restricting late-stage scope variations lowers cost overrun probability by 31%."

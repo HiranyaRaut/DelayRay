@@ -1,0 +1,67 @@
+rules:
+  - id: R1
+    name: "Schedule slippage"
+    severity: "Warning"
+    description: "SPI < 0.85 for 3 consecutive months"
+    parameters:
+      spi_threshold: 0.85
+      consecutive_months: 3
+    enabled: true
+
+  - id: R2
+    name: "Spend-progress divergence"
+    severity: "Warning"
+    description: "expenditure % - physical % > 10 points"
+    parameters:
+      divergence_pct: 10.0
+    enabled: true
+
+  - id: R3
+    name: "High model risk"
+    severity: "Critical"
+    description: "risk score >= 75, or rise of >= 15 points in one month"
+    parameters:
+      score_threshold: 75.0
+      monthly_delta_threshold: 15.0
+    enabled: true
+
+  - id: R4
+    name: "Forecast slip"
+    severity: "Warning"
+    description: "forecast completion > 6 months beyond approved date"
+    parameters:
+      delay_months_threshold: 6.0
+    enabled: true
+
+  - id: R5
+    name: "Stalled progress"
+    severity: "Critical"
+    description: "no physical progress change for 3 months while time elapses"
+    parameters:
+      consecutive_stall_months: 3
+    enabled: true
+
+  - id: R6
+    name: "Milestone misses"
+    severity: "Warning"
+    description: "2 consecutive missed milestones"
+    parameters:
+      missed_milestones: 2
+    enabled: true
+
+  - id: R7
+    name: "Anomaly"
+    severity: "Watch"
+    description: "anomaly score in top 2%"
+    parameters:
+      percentile: 0.02
+    enabled: true
+
+  - id: R8
+    name: "Critical challenge"
+    severity: "Critical"
+    description: "remark tags include land, clearance or funds with high confidence"
+    parameters:
+      tags: ["land", "clearance", "funds"]
+      confidence_threshold: 0.75
+    enabled: true
