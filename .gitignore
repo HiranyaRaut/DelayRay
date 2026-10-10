@@ -50,6 +50,8 @@ dist-ssr/
 *.sqlite
 *.sqlite3
 *.db
+*.db-shm
+*.db-wal
 backend/delayray.db
 
 # ML artifacts (keep reports and .gitkeep)
